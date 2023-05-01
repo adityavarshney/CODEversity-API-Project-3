@@ -8,7 +8,7 @@ In Project 0 ([template](https://replit.com/@adityavarshney1/CODEversity-Spotify
 
 From there, in Project 1 ([template](https://replit.com/@adityavarshney1/CODEversity-Spotify-P1)), added new HTML and CSS files, images, links, styling, and text about our favorite music choices.
 
-Most recently, in Project 2 ([template](https://replit.com/@adityavarshney1/CODEversity-Spotify-P2)) we took our musical choices to the next level by using python and flask's Jinja templating to make a templated list of concerts and showtimes and a time-based dark mode too.
+Most recently, in Project 2 ([template](https://replit.com/@adityavarshney1/CODEversity-Spotify-P2)) we took our musical choices to the next level by using python and flask's Jinja templating to make a time-based dark mode and a webpage with our recommended music concerts.
 
 ### What's missing? 
 
@@ -16,7 +16,7 @@ At the moment, we don't have a way of bringing in real data to our web page. For
 * Tracking artists performing near the user's location
 * Finding songs the user has listened to or likes on Spotify
 * Queueing songs on Spotify or other web player
-* Theming the mood of recommendations to match the weather outside
+* Theming music recommendations to match the weather outside
 * And so much more...
 
 These tasks involve learning more about our users and the real information out there. Since we don't have this information accessible to us directly, we need APIs to be able to access it.
