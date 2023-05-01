@@ -1,0 +1,62 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+	<title>Recommendations</title>
+  {% if use_light_mode %}
+    <link rel="stylesheet" href="static/styles_light.css">
+  {% else %}
+    <link rel="stylesheet" href="static/styles_dark.css">
+  {% endif %}
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="container">
+        <img src="/static/spotify-logo.png" height=100px width=100px>
+      </div>
+      <button><a href="/playlists" class="back">Playlists</a></button>
+    </div>
+    <div class="content" style="overflow:auto">
+      <h1>Song recommendations</h1>
+        <ul>
+<!--  TODO: Use Jinja syntax to add playlist information from get_playlists  -->
+          <li>
+            <div class="container">
+              <div class="left">
+                I Gotta Feeling
+              </div>
+              <div class="right">
+                <div class="container">
+                  <div class="left">
+                    <p style="color:white">
+                      Black Eyed Peas
+                    </p>
+                  </div>
+                  <div class="right">
+                    <img src="https://i1.sndcdn.com/artworks-RPd3QthGWrVInjRM-XZglyA-t500x500.jpg" width="200" height="200">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+<!--  END TODO  -->
+        </ul>
+      <h1>
+        Upcoming Concerts
+        <ul>
+          {% for concert in concerts %}
+          <li>
+            <div class="concert">
+              <div>{{ concert[0] }}</div>
+              <div>{{ concert[1] }}</div>
+            </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </h1>
+    </div>
+  </div>
+</body>

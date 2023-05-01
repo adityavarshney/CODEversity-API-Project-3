@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Playlists</title>
+    {% if use_light_mode %}
+      <link rel="stylesheet" href="static/styles_light.css">
+    {% else %}
+      <link rel="stylesheet" href="static/styles_dark.css">
+    {% endif %}
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="container">
+          <img src="static/spotify-logo.png" height=100px width=100px>
+        </div>
+        <button><a href="/recommendations" class="back">Recommendations</a></button>
+      </div>
+      <div class="content" style="overflow:auto">
+        <h1>My playlists!</h1>
+        <ul>
+<!--  TODO: Use Jinja syntax to add playlist information from get_playlists  -->
+          <li>
+            <div class="container">
+              <div class="left">
+                Road-Trips!
+              </div>
+              <div class="right">
+                <img src="https://img.huffingtonpost.com/asset/5e28d0a9240000b403c972af.jpeg?cache=Ui5chf7iyK&ops=1778_1000" width=300 height=200>
+              </div>
+            </div>
+          </li>
+<!-- END TODO -->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
